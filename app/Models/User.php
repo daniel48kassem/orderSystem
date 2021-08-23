@@ -43,12 +43,10 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-<<<<<<< HEAD
+
     public function orders()
     {
         return $this->belongsToMany(Order::class, 'orderUsers');
     }
-=======
 
->>>>>>> cb6b438c7bf85ee4bfa6c59bb0f16ad1978c0a59
 }
