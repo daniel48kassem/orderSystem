@@ -17,7 +17,7 @@ class Order extends JsonResource
         return [
             'id' => $this->id,
             'cost' => $this->cost,
-            'products' => Product::collection($this->products)
+            'products' => !!$this->products ? Product::collection($this->products) : []
         ];
     }
 }
