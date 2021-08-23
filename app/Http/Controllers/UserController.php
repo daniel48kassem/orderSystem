@@ -15,7 +15,7 @@ class UserController extends BaseController
         $user=User::findOrFail($userId);
 
         $user->update([
-            'name'=>$request->name,
+            'names'=>$request->name,
             'password'=> bcrypt($request->password),
             'shipping_address'=>$request->shipping_address
         ]);
