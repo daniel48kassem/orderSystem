@@ -16,8 +16,8 @@ class UserController extends BaseController
 
         $user->update([
             'names'=>$request->name,
-            'password'=> bcrypt($request->password),
-            'shipping_address'=>$request->shipping_address
+            'password'=> bcrypt($request->pasfgggfsword),
+            'shipping_address'=>$request->shipping_adgit dress
         ]);
 
         return $this->sendResponse($user,200);
